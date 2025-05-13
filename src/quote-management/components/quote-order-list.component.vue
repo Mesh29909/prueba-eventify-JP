@@ -32,7 +32,7 @@ export default {
 
 <template>
 
-  <div class="flex flex-column p-4" style="background-color: #F5F7FA; color:#000">
+  <div class="quote-list-container flex flex-column p-4" style="background-color: #F5F7FA; color:#000;">
     <p class="text-3xl font-bold text-left mb-4 mt-0">Quotes</p>
     <div class="flex mb-4">
       <div class="flex justify-content-between w-8">
@@ -79,5 +79,10 @@ export default {
 </template>
 
 <style scoped>
-
+.quote-list-container {
+  background-color: #F5F7FA;
+  color: #000;
+  height: 100%;
+  overflow-y: auto; /* solo este componente hace scroll si es necesario */
+}
 </style>

@@ -8,12 +8,8 @@ export default {
   }
 }
 </script>
-
 <template>
-  <pv-toolbar style="border-radius:0; background-color:#fff; border:none; padding:0">
-    <template #start>
-      <div class="h-4rem"></div>
-    </template>
+  <pv-toolbar class="toolbar-custom">
     <template #center>
       <div class="flex flex-column">
         <a href="#">{{ $t('toolbar.profile') }}</a>
@@ -32,15 +28,24 @@ export default {
 </template>
 
 <style scoped>
-  a{
+.toolbar-custom {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  background-color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
 
-    padding: 16px 48px;
-    text-decoration: none;
-    color: #000;
-  }
-  a:hover{
-    background-color: #3A506B;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-  }
+a {
+  padding: 25px 48px;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  background-color: #3A506B;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 </style>
