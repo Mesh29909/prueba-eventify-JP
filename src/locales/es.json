@@ -7,5 +7,29 @@
     "quotes": "Cotizaciones",
     "messages": "Mensajes",
     "subscriptions": "Suscripciones"
+  },
+  "tasks": {
+    "title": "Gestión de Tareas",
+    "create": "Crear Nueva Tarea",
+    "edit": "Editar Tarea",
+    "taskTitle": "Título de la tarea",
+    "taskDescription": "Descripción",
+    "column": "Columna",
+    "empty": "No hay tareas en esta columna",
+    "emptyColumn": "Arrastra tareas aquí",
+    "addTask": "Añadir Tarea",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "confirmDelete": ",¿Estás seguro de que deseas eliminar esta tarea?",
+    "yes": "Sí",
+    "no": "No",
+    "column-1": "Tareas",
+    "column-2": "Faltan Hacer",
+    "column-3": "En Progreso",
+    "column-4": "Completadas"
+  },
+  "common": {
+    "required": "es requerido"
   }
 }

@@ -44,7 +44,7 @@ export default {
         <pv-select class="w-3" placeholder="Recientes"></pv-select>
       </div>
       <div class="flex justify-content-end w-4">
-        <pv-button style="background-color: #3A506B" type="button" @click="visible = true; quoteOrderSelected = null"><i class="pi pi-plus-circle"></i> New Quote</pv-button>
+        <pv-button style="background-color: #98bef1" type="button" @click="visible = true; quoteOrderSelected = null"><i class="pi pi-plus-circle"></i> New Quote</pv-button>
       </div>
     </div>
 
@@ -54,7 +54,7 @@ export default {
       <create-quote :quote="quoteOrderSelected" v-on:create-quote-order="onCreateQuoteOrder" @close-create-quote="visible=false"></create-quote>
     </pv-dialog>
 
-    <pv-data-table :value="quoteOrderList" table-style="min-width:50rem">
+    <pv-data-table :value="quoteOrderList" table-style="min-width:50rem" style="background-color: #f3f5fa">
       <pv-column field="id" header="Id"></pv-column>
       <pv-column field="title" header="Title"></pv-column>
       <pv-column field="eventType" header="Event Type"></pv-column>
@@ -80,8 +80,8 @@ export default {
 
 <style scoped>
 .quote-list-container {
-  background-color: #F5F7FA;
-  color: #000;
+  background-color: #709ff3;
+  color: #89d8ef;
   height: 100%;
   overflow-y: auto; /* solo este componente hace scroll si es necesario */
 }

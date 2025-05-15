@@ -6,6 +6,8 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura'
 import 'primeflex/primeflex.css'
 import 'primeicons/primeicons.css'
+import Textarea from 'primevue/textarea';
+import AutoComplete from 'primevue/autocomplete';
 import {
     Avatar,
     Button,
@@ -16,7 +18,7 @@ import {
     InputGroup,
     InputGroupAddon, InputNumber,
     InputText, Select,
-    SelectButton, Toolbar
+    SelectButton, Toolbar,
 } from "primevue";
 
 
@@ -38,4 +40,6 @@ app.use(i18n)
     .component('pv-divider', Divider)
     .component('pv-toolbar',Toolbar)
     .component('pv-avatar',Avatar)
+    .component('pv-textarea', Textarea)
+    .component('pv-dropdown', AutoComplete)
     .mount('#app');

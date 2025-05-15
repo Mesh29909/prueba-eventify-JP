@@ -6,21 +6,25 @@ import CreateQuote from "./quote-management/components/create-quote.component.vu
 import QuoteOrderList from "./quote-management/components/quote-order-list.component.vue"
 import HeaderContent from "./public/components/header-content.component.vue";
 import ToolbarContent from "./public/components/toolbar-content.component.vue";
+import TaskManagement from './task-management/components/task-management.component.vue';
 export default defineComponent({
-  components: {ToolbarContent, HeaderContent, CreateQuote, LanguageSwitcher,QuoteOrderList}
+  components: {TaskManagement, ToolbarContent, HeaderContent, CreateQuote, LanguageSwitcher,QuoteOrderList}
 })
 </script>
+
 <template>
   <div class="app-wrapper">
     <header-content />
     <div class="layout-body">
       <toolbar-content />
       <div class="main-content">
-        <quote-order-list class="w-full" />
+        <TaskManagement></TaskManagement>
       </div>
     </div>
   </div>
 </template>
+
+
 <style scoped>
 .app-wrapper {
   height: 100vh;
